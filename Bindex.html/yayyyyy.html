@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imissyoueiei</title>
+
+    <style>
+
+body {
+      background: #fff0f5;
+      font-family: 'Kanit', sans-serif;
+      text-align: center;
+      padding: 80px 20px;
+      overflow: hidden;
+    }
+
+    h2 {
+      color: #e91e63;
+      font-size: 2.5em;
+    }
+
+    .options {
+      margin-top: 40px;
+    }
+        .heart {
+          position: absolute;
+          width: 20px;
+          height: 20px;
+          background-color: #ff69b4;
+          transform: rotate(45deg);
+          opacity: 0.6;
+          animation: floatHeart 6s infinite ease-in;
+        }
+      
+        .heart::before,
+        .heart::after {
+          content: "";
+          position: absolute;
+          width: 20px;
+          height: 20px;
+          background-color: #ff69b4;
+          border-radius: 50%;
+        }
+      
+        .heart::before {
+          top: -10px;
+          left: 0;
+        }
+      
+        .heart::after {
+          top: 0;
+          left: -10px;
+        }
+      
+        .heart1 { left: 20%; animation-delay: 0s; }
+        .heart2 { left: 40%; animation-delay: 1s; }
+        .heart3 { left: 60%; animation-delay: 2s; }
+        .heart4 { left: 80%; animation-delay: 3s; }
+      
+        @keyframes floatHeart {
+          0% {
+            top: 100%;
+            opacity: 0;
+          }
+          50% {
+            opacity: 1;
+          }
+          100% {
+            top: -50px;
+            opacity: 0;
+          }
+        }
+
+      </style>
+      
+</head>
+<body>
+    <h2>เย้ คิดถึงบีที่สุดเลยยยยยย 💖</h2>
+    
+<div class="heart heart1"></div>
+<div class="heart heart2"></div>
+<div class="heart heart3"></div>
+<div class="heart heart4"></div>
+
+</body>
+</html>
