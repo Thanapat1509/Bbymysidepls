@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>บอกรักแฟน</title>
+  <style>
+    body {
+      background: #fff0f5;
+      font-family: 'Kanit', sans-serif;
+      text-align: center;
+      padding: 100px 20px;
+      overflow: hidden;
+    }
+
+    h1 {
+      color: #e91e63;
+      font-size: 3em;
+    }
+
+    a.button {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 15px 40px;
+      font-size: 1.5em;
+      background-color: #ff4081;
+      color: white;
+      border-radius: 50px;
+      text-decoration: none;
+      transition: 0.3s ease;
+    }
+
+    a.button:hover {
+      background-color: #f50057;
+      transform: scale(1.05);
+    }
+
+    .heart {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-color: #ff69b4;
+      transform: rotate(45deg);
+      opacity: 0.6;
+      animation: floatHeart 6s infinite ease-in;
+    }
+
+    .heart::before,
+    .heart::after {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-color: #ff69b4;
+      border-radius: 50%;
+    }
+
+    .heart::before { top: -10px; left: 0; }
+    .heart::after { top: 0; left: -10px; }
+
+    .heart1 { left: 20%; animation-delay: 0s; }
+    .heart2 { left: 40%; animation-delay: 1s; }
+    .heart3 { left: 60%; animation-delay: 2s; }
+    .heart4 { left: 80%; animation-delay: 3s; }
+
+    @keyframes floatHeart {
+      0% { top: 100%; opacity: 0; }
+      50% { opacity: 1; }
+      100% { top: -50px; opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>โอมคิดถึงบีแล้ววว 💖</h1>
+  <a href="question.html" class="button">กดตรงนี้หน่อยจิ</a>
+
+  <div class="heart heart1"></div>
+  <div class="heart heart2"></div>
+  <div class="heart heart3"></div>
+  <div class="heart heart4"></div>
+
+</body>
+</html>
